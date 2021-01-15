@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Soneta.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(SonetaTargetFramework)</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Czynsze.business.xml">
+      <Generator>BusinessGenerator</Generator>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="RozliczenieWspolnotWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\SumaRozliczenWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\KorektaRozliczenWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\WgKoduWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\PrzeliczWorkerWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\StawkiPrzeliczWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Workers\NaleznosciPrzeliczenieWorkerParams.Ogolne.pageform.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MZGMModule.C4IT">
+      <HintPath>..\bin\Debug\net46\MZGMModule.C4IT.dll</HintPath>
+    </Reference>
+    <Reference Include="MZGMModule.C4IT.UI">
+      <HintPath>..\bin\Debug\net46\MZGMModule.C4IT.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

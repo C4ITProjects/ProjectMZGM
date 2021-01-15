@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:ZarzadcyPage"
+          Priority="100"
+          DataType="ProjectMZGM.Nieruchomosc,ProjectMZGM">
+
+  <Page Name="Zarządcy" CaptionHtml="Zarzadcy informacje" DataContext="{DataSource}">
+    <Group CaptionHtml="Zarządca">
+      <Stack>
+        <Row>
+          <Field EditValue="{Zarzadca.KodZarzadcy}" CaptionHtml="Kod"  OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{Zarzadca.NazwaZarzadcy}" CaptionHtml="Nazwa zarządcy"  OuterWidth="40" LabelWidth="10"/>
+        </Row>
+      </Stack>
+    </Group>
+    <Group CaptionHtml="Dodatkowe dane">
+      <Stack>
+        <Row>
+          <Field EditValue="{Zarzadca.Ulica}" CaptionHtml="Ulica" OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{Zarzadca.NumerDomu}" CaptionHtml="Numer domu" OuterWidth="40" LabelWidth="12"/>
+          <Field EditValue="{Zarzadca.NumerLokalu}" CaptionHtml="Numer lokalu" OuterWidth="40" LabelWidth="12"/>
+        </Row>
+        <Row>
+          <Field EditValue="{Zarzadca.KodPocztowyZarz}" CaptionHtml="Kod pocztowy" Class="LeftAlign" OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{Zarzadca.MiastoZarz}" CaptionHtml="Miasto" OuterWidth="40" LabelWidth="12"/>
+          <Field EditValue="{Zarzadca.NumerTelefonu}" CaptionHtml="Miasto" OuterWidth="40" LabelWidth="12"/>
+        </Row>
+      </Stack>
+    </Group>
+    <Group CaptionHtml="Księgowanie" LabelWidth="17">
+      <Row>
+        <Field EditValue="{Zarzadca.KontoZarzadca3}" CaptionHtml="Zarządca 3"/>
+        <Field EditValue="{Zarzadca.KontoZarzadca4}" CaptionHtml="Zarządca 4"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoWoda4}" CaptionHtml="Woda 4"/>
+        <Field EditValue="{Zarzadca.KontoWoda5}" CaptionHtml="Woda 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoScieki4}" CaptionHtml="Ścieki 4"/>
+        <Field EditValue="{Zarzadca.KontoScieki5}" CaptionHtml="Ścieki 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoSmieci4}" CaptionHtml="Śmieci 4"/>
+        <Field EditValue="{Zarzadca.KontoSmieci5}" CaptionHtml="Śmieci 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoKekspl4}" CaptionHtml="KEkslp. 4"/>
+        <Field EditValue="{Zarzadca.KontoKekspl5}" CaptionHtml="KEkslp. 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoKosztyZarz4}" CaptionHtml="Koszty zarządu 4"/>
+        <Field EditValue="{Zarzadca.KontoKosztyZarz5}" CaptionHtml="Koszty zarządu 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoDomofon4}" CaptionHtml="Domofon 4"/>
+        <Field EditValue="{Zarzadca.KontoDomofon5}" CaptionHtml="Domofon 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoFunduszRem4}" CaptionHtml="Fundusz remontowy 4"/>
+        <Field EditValue="{Zarzadca.KontoFunduszRem5}" CaptionHtml="Fundusz remontowy 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoCWU4}" CaptionHtml="CWU 4"/>
+        <Field EditValue="{Zarzadca.KontoCWU5}" CaptionHtml="CWU 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoCO4}" CaptionHtml="CO 4"/>
+        <Field EditValue="{Zarzadca.KontoCO5}" CaptionHtml="CO 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoAntena4}" CaptionHtml="Antena 4"/>
+        <Field EditValue="{Zarzadca.KontoAntena5}" CaptionHtml="Antena 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoWinda4}" CaptionHtml="Winda 4"/>
+        <Field EditValue="{Zarzadca.KontoWinda5}" CaptionHtml="Winda 5"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoParagraf4260}" CaptionHtml="Paragraf 4260"/>
+        <Field EditValue="{Zarzadca.KontoParagraf4300}" CaptionHtml="Paragraf 4300"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Zarzadca.KontoParagraf4270}" CaptionHtml="Paragraf 4270"/>
+        <Field EditValue="{Zarzadca.KontoParagraf4270FR}" CaptionHtml="Paragraf 4270 FR"/>
+      </Row>
+    </Group>
+  </Page>
+</DataForm>
+

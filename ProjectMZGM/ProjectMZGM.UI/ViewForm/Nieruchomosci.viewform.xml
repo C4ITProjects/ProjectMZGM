@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd">
+  <Flow Name="FilterPanel">
+    <Field CaptionHtml="Zarządca" EditValue="{NieruchomosciViewInfo+WParams.Zarzadca}" />
+    <Field CaptionHtml="Zablokowane" EditValue="{NieruchomosciViewInfo+WParams.Zablokowany}" />
+  </Flow>
+
+  <Grid Name="List" RemoveButton="Auto" EditButton="Auto" NewButton="Auto" IsToolbarVisible="true">
+    <Field EditValue="{Nieaktywny}" CaptionHtml="Zablokowany" Footer="None" Width="6"/>
+    <Field EditValue="{Zarzadca.NazwaZarzadcy}" CaptionHtml="Nazwa zarządcy" Footer="None" Width="15"/>
+    <Field EditValue="{AdresPelnyNieruchomosci}" CaptionHtml="Adres nieruchomosci" Footer="None" Width="15"/>
+
+    <Field Footer="Sum" EditValue="{StawkaWoda}" Width="11" CaptionHtml="Woda "/>
+    <Field Footer="Sum" EditValue="{StawkaScieki}" Width="11" CaptionHtml="Ścieki "/>
+    <Field Footer="Sum" EditValue="{StawkaCo}" Width="11" CaptionHtml="CO "/>
+    <Field Footer="Sum" EditValue="{StawkaSmieci}" Width="11" CaptionHtml="Śmieci "/>
+    <Field Footer="Sum" EditValue="{StawkaKEkspl}" Width="11" CaptionHtml="K.ekspl "/>
+    <Field Footer="Sum" EditValue="{StawkaWynZarz}" Width="11" CaptionHtml="WynZarz "/>
+    <Field Footer="Sum" EditValue="{StawkaDomofon}" Width="11" CaptionHtml="Domofon "/>
+    <Field Footer="Sum" EditValue="{StawkaEnergia}" Width="11" CaptionHtml="Energia "/>
+    <Field Footer="Sum" EditValue="{StawkaWinda}" Width="11" CaptionHtml="Winda "/>
+    <Field Footer="Sum" EditValue="{StawkaAntena}" Width="11" CaptionHtml="Antena "/>
+    <Field Footer="Sum" EditValue="{StawkaCWU}" Width="11" CaptionHtml="CWU "/>
+    <Field Footer="Sum" EditValue="{StawkaSmieciSel}" Width="11" CaptionHtml="Smieci selekcjonowane "/>
+    <Field Footer="Sum" EditValue="{StawkaSmieciNsel}" Width="11" CaptionHtml="Smieci nieselekcjonowane "/>
+    <Field Footer="Sum" EditValue="{StawkaFunduszRemontowy}" Width="11" CaptionHtml="Fundusz Remontowy "/>
+    <Field Footer="Sum" EditValue="{Workers.ExNieruchomosci.ZaplataZaliczka}" CaptionHtml="Zaplata zaliczka" Width="14"  />
+    <Field Footer="Sum" EditValue="{Workers.ExNieruchomosci.ZaplataFundusz}" CaptionHtml="Zaplata fundusz" Width="14"/>
+
+  </Grid>
+</DataForm>

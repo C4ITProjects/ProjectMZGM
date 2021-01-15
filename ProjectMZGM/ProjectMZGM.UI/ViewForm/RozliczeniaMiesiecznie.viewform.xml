@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd">
+  <Flow Name="FilterPanel">
+      <Field CaptionHtml="Data" EditValue="{RozliczeniaMiesiecznieViewInfo+WParams.Data}" />
+      <Field CaptionHtml="Zarządca" EditValue="{RozliczeniaMiesiecznieViewInfo+WParams.Zarzadca}" />
+      <Field CaptionHtml="Adres" EditValue="{RozliczeniaMiesiecznieViewInfo+WParams.Nieruchomosc}" />
+    </Flow>
+   <Grid Name="List" RemoveButton="Auto" EditButton="Auto" NewButton="Auto" IsToolbarVisible="true">
+     <Field CaptionHtml="Miesiac rok" Width="12" EditValue="{MiesiacRok}" Footer="None" />
+     <Field CaptionHtml="Nazwa zarzadcy" Width="12" EditValue="{Zarzadca.NazwaZarzadcy}" Footer="None" />
+     <Field CaptionHtml="Adres pelny nieruchomosci" Width="24" EditValue="{AdresPelnyNieruchomosci}" Footer="None" />
+     <Field CaptionHtml="Woda" Width="10" EditValue="{Workers.ExRozliczenia.Woda}" Footer="None" />
+     <Field CaptionHtml="Ścieki" Width="10" EditValue="{Workers.ExRozliczenia.Ścieki}" Footer="None" />
+     <Field CaptionHtml="CO" Width="10" EditValue="{Workers.ExRozliczenia.CO}" Footer="None" />
+     <Field CaptionHtml="CWU" Width="10" EditValue="{Workers.ExRozliczenia.CWU}" Footer="None" />
+     <Field CaptionHtml="Śmieci" Width="10" EditValue="{Workers.ExRozliczenia.Śmieci}" Footer="None" />
+     <Field CaptionHtml="Śmieci nie selekcjonowane" Width="10" EditValue="{Workers.ExRozliczenia.ŚmieciNieSelekcjonowane}" Footer="None" />
+     <Field CaptionHtml="Śmieci selekcjonowane" Width="10" EditValue="{Workers.ExRozliczenia.ŚmieciSelekcjonowane}" Footer="None" />
+     <Field CaptionHtml="Koszty ekslpotacji" Width="10" EditValue="{Workers.ExRozliczenia.KosztyEkslpotacji}" Footer="None" />
+     <Field CaptionHtml="Wynagrodzenie zarzadu" Width="10" EditValue="{Workers.ExRozliczenia.WynagrodzenieZarzadu}" Footer="None" />
+     <Field CaptionHtml="Domofon" Width="10" EditValue="{Workers.ExRozliczenia.Domofon}" Footer="None" />
+     <Field CaptionHtml="Winda" Width="10" EditValue="{Workers.ExRozliczenia.Winda}" Footer="None" />
+     <Field CaptionHtml="Antena" Width="10" EditValue="{Workers.ExRozliczenia.Antena}" Footer="None" />
+     <Field CaptionHtml="Paragraf 4260" Width="10" EditValue="{SumaParagraf4260}" Footer="None" />
+     <Field CaptionHtml="Paragraf 4300" Width="10" EditValue="{SumaParagraf4300}" Footer="None" />
+     <Field CaptionHtml="Paragraf 4270" Width="10" EditValue="{SumaParagraf4270}" Footer="None" />
+     <Field CaptionHtml="Zaplata zaliczka" Width="11" EditValue="{ZaplataZaliczka}" Footer="Sum" />
+     <Field CaptionHtml="Fundusz Remontowy" Width="11" EditValue="{SumaParagraf4270FR}" Footer="None" />
+     <Field CaptionHtml="Zaplata fundusz" Width="11" EditValue="{ZaplataFundusz}" Footer="Sum" />
+   </Grid>
+</DataForm>

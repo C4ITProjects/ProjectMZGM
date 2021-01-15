@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd">
+  <Flow Name="FilterPanel">
+      <Field CaptionHtml="Data" EditValue="{RozliczeniaViewInfo+WParams.Data}" />
+      <Field CaptionHtml="Zarządca" EditValue="{RozliczeniaViewInfo+WParams.Zarzadca}" />
+      <Field CaptionHtml="Adres" EditValue="{RozliczeniaViewInfo+WParams.Nieruchomosc}" />
+    </Flow>
+   <Grid Name="List" RemoveButton="Auto" EditButton="Auto" NewButton="Auto" IsToolbarVisible="true">
+     <Field Footer="None" EditValue="{Data}" Width="10" CaptionHtml="Data"/>
+     <Field Footer="None" EditValue="{MiesiacRok}"  Width="12" CaptionHtml="Miesiac rok"/>
+     <Field Footer="Sum" EditValue="{WodaKorekta}" Width="11" CaptionHtml="Woda korekta"/>
+     <Field Footer="Sum" EditValue="{SciekiKorekta}" Width="11" CaptionHtml="Ścieki korekta"/>
+     <Field Footer="Sum" EditValue="{CoKorekta}" Width="11" CaptionHtml="CO korekta"/>
+     <Field Footer="Sum" EditValue="{SmieciKorekta}" Width="11" CaptionHtml="Śmieci korekta"/>
+     <Field Footer="Sum" EditValue="{KEksplKorekta}" Width="11" CaptionHtml="K.ekspl korekta"/>
+     <Field Footer="Sum" EditValue="{WynZarzKorekta}" Width="11" CaptionHtml="WynZarz korekta"/>
+     <Field Footer="Sum" EditValue="{DomofonKorekta}" Width="11" CaptionHtml="Domofon korekta"/>
+     <Field Footer="Sum" EditValue="{EnergiaKorekta}" Width="11" CaptionHtml="Energia korekta"/>
+     <Field Footer="Sum" EditValue="{WindaKorekta}" Width="11" CaptionHtml="Winda korekta"/>
+     <Field Footer="Sum" EditValue="{AntenaKorekta}" Width="11" CaptionHtml="Antena korekta"/>
+     <Field Footer="Sum" EditValue="{CWUKorekta}" Width="11" CaptionHtml="CWU korekta"/>
+     <Field Footer="Sum" EditValue="{SmieciSelKorekta}" Width="11" CaptionHtml="Smieci selekcjonowane korekta"/>
+     <Field Footer="Sum" EditValue="{SmieciNselKorekta}" Width="11" CaptionHtml="Smieci nieselekcjonowane korekta"/>
+     <Field Footer="Sum" EditValue="{FunduszRemontowyKorekta}" Width="11" CaptionHtml="Fundusz Remontowy korekta"/>
+     <Field Footer="Sum" EditValue="{Paragraf4260Korekta}" Width="11" CaptionHtml="Paragraf 4260" IsReadOnly="1"/>
+     <Field Footer="Sum" EditValue="{Paragraf4300Korekta}" Width="11" CaptionHtml="Paragraf 4300" IsReadOnly="1"/>
+     <Field Footer="Sum" EditValue="{Paragraf4270Korekta}" Width="11" CaptionHtml="Paragraf 4270" IsReadOnly="1"/>
+     <Field Footer="Sum" EditValue="{FunduszRemontowyParagraf4270Korekta}" Width="23" CaptionHtml="Fundusz Remontowy Paragraf4270" IsReadOnly="1"/>
+   </Grid>
+</DataForm>

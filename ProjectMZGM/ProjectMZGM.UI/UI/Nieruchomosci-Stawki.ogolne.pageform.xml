@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:NieruchomoscPage"
+          Priority="44"
+          DataType="ProjectMZGM.Nieruchomosc,ProjectMZGM">
+  
+  <Page Name="NieruchomoscPage" CaptionHtml="Stawki Podstawowe" DataContext="{DataSource}">
+      <Group CaptionHtml="Stawki" LabelWidth="17">
+        <Row>
+          <Field EditValue="{StawkaWoda}" CaptionHtml="Woda" />
+          <Field EditValue="{StawkaScieki}" CaptionHtml="Ścieki"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaCo}" CaptionHtml="CO" />
+          <Field EditValue="{StawkaCWU}" CaptionHtml="CWU"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaKEkspl}" CaptionHtml="Koszty ekspl." />
+          <Field EditValue="{StawkaWynZarz}" CaptionHtml="Wynagrodzenie zarządcy" />
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaDomofon}" CaptionHtml="Domofon"/>
+          <Field EditValue="{StawkaEnergia}" CaptionHtml="Energia"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaWinda}" CaptionHtml="Winda" />
+          <Field EditValue="{StawkaSmieci}" CaptionHtml="Śmieci"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaAntena}" CaptionHtml="Antena" />
+          <Field EditValue="{StawkaSmieciSel}" CaptionHtml="Nieczystości selekcjonowane"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaFunduszRemontowy}" CaptionHtml="Fundusz remontowy"/>
+          <Field EditValue="{StawkaSmieciNsel}" CaptionHtml="Nieczystości nieselekcjonowane"/>
+          <Field CaptionHtml="Stawka całość" IsReadOnly="true" EditValue="{StawkaCalosc}" Footer="Sum" />
+        </Row>
+      </Group>
+    </Page>
+</DataForm>
+

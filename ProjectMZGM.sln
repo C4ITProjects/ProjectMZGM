@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F872489-FA25-472A-89FC-8AB5B1AA0ABF}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectMZGM", "ProjectMZGM\ProjectMZGM\ProjectMZGM.csproj", "{1BF571C7-74B7-4649-AEBD-304D19DCE537}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectMZGM.UI", "ProjectMZGM\ProjectMZGM.UI\ProjectMZGM.UI.csproj", "{EB988890-E41C-4ECD-9E34-51A3D85C9449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BF571C7-74B7-4649-AEBD-304D19DCE537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF571C7-74B7-4649-AEBD-304D19DCE537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF571C7-74B7-4649-AEBD-304D19DCE537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF571C7-74B7-4649-AEBD-304D19DCE537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB988890-E41C-4ECD-9E34-51A3D85C9449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB988890-E41C-4ECD-9E34-51A3D85C9449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB988890-E41C-4ECD-9E34-51A3D85C9449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB988890-E41C-4ECD-9E34-51A3D85C9449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46DC0B20-F662-4427-9E9D-C3EB2FEA55EF}
+	EndGlobalSection
+EndGlobal

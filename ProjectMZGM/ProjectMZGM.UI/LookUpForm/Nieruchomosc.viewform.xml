@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" xmlns="http://www.enova.pl/schema/form.xsd">
+  <Grid Name="List" IsToolbarVisible="true" NewButton="Auto">
+    <Field EditValue="{AdresPelnyNieruchomosci}"/>
+  </Grid>
+</DataForm>

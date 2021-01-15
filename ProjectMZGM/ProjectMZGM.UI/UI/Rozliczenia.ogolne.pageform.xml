@@ -1,0 +1,118 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:RozliczeniaPage"
+          Priority="1"
+          DataType="ProjectMZGM.Rozliczenie,ProjectMZGM">
+
+  <Page Name="OgólnePage" CaptionHtml="Rozliczenie - Korekty" DataContext="{DataSource}">
+    <Group CaptionHtml="Rozliczenia" LabelWidth="20">
+      <Row>
+        <Field EditValue="{AdresPelnyNieruchomosci}" CaptionHtml="Adres pełny nieruchomości" IsReadOnly="true" OuterWidth="70"/>
+        <Field EditValue="{Zarzadca}" CaptionHtml="Zarządca" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Data}" CaptionHtml="Data" />
+      </Row>
+      <Row>
+        <Field EditValue="{SumaStawek}" CaptionHtml="Suma Stawek" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{SumaStawekBezFR}" CaptionHtml="Stawki bez FR" IsReadOnly="true" />
+        <Field EditValue="{FunduszRemontowy}" CaptionHtml="Fundusz Remontowy" IsReadOnly="true"/>
+      </Row>
+    </Group>
+      <Group CaptionHtml="Korekty" LabelWidth="20">
+      <Row>
+        <Field EditValue="{DataKorekta}" CaptionHtml="Data korekty" />
+      </Row>
+      <Row>
+        <Field EditValue="{WodaKorekta}" CaptionHtml="Woda" />
+      </Row>
+      <Row>
+        <Field EditValue="{SciekiKorekta}" CaptionHtml="Scieki" />
+      </Row>
+      <Row>
+        <Field EditValue="{CoKorekta}" CaptionHtml="CO"/>
+      </Row>
+     <Row>
+      <Field EditValue="{KEksplKorekta}" CaptionHtml="Koszty elsploatacyjne"/>
+      </Row>
+      <Row>
+        <Field EditValue="{WynZarzKorekta}" CaptionHtml="Wynagrodzenie zarządu"/>
+      </Row>
+      <Row>
+        <Field EditValue="{DomofonKorekta}" CaptionHtml="Domofon"/>
+      </Row>
+      <Row>
+        <Field EditValue="{EnergiaKorekta}" CaptionHtml="Energia"/>
+      </Row>
+      <Row>
+        <Field EditValue="{WindaKorekta}" CaptionHtml="Winda"/>
+      </Row>
+      <Row>
+        <Field EditValue="{AntenaKorekta}" CaptionHtml="Antena"/>
+      </Row>
+      <Row>
+        <Field EditValue="{CWUKorekta}" CaptionHtml="CWU" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciKorekta}" CaptionHtml="Smieci" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciSelKorekta}" CaptionHtml="Smieci selekcjonowane" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciNselKorekta}" CaptionHtml="Smieci nie selekcjonowane" />
+      </Row>
+      <Row>
+        <Field EditValue="{FunduszRemontowyKorekta}" CaptionHtml="Fundusz remontowy"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Paragraf4260Korekta}" CaptionHtml="Paragraf4260" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Paragraf4300Korekta}" CaptionHtml="Paragraf4300" IsReadOnly="true"/>
+      </Row> 
+      <Row>
+        <Field EditValue="{Paragraf4270Korekta}" CaptionHtml="Paragraf4270" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{FunduszRemontowyParagraf4270Korekta}" CaptionHtml="Paragraf4270FR" IsReadOnly="true"/>
+        <Field EditValue="{SumaKorekt}" CaptionHtml="Suma korekt" IsReadOnly="true"/>
+      </Row>
+      </Group>
+    <Group CaptionHtml="Zapłaty">
+      <Row>
+        <Field EditValue="{ZaplataZaliczka1}" CaptionHtml="Zaliczka"/> 
+        <Field EditValue="{ZaplataFundusz1}" CaptionHtml="Fundusz"/>
+      </Row>
+      <Row>
+        <Field EditValue="{ZaplataZaliczka2}" CaptionHtml="Zaliczka"/>
+        <Field EditValue="{ZaplataFundusz2}" CaptionHtml="Fundusz"/>
+      </Row>
+      <Row>
+        <Field EditValue="{ZaplataZaliczka3}" CaptionHtml="Zaliczka"/>
+        <Field EditValue="{ZaplataFundusz3}" CaptionHtml="Fundusz"/>
+      </Row>
+    </Group>
+    <Group CaptionHtml="Zapłata końcowa">
+      <Row>
+        <Field EditValue="{ZaplataZaliczka}" CaptionHtml="Zaplata zaliczka"/>
+        <Field EditValue="{ZaplataFundusz}" CaptionHtml="Zaplata fundusz"/>
+      </Row>
+      <Row>
+        <Field EditValue="{SumaParagraf4260}" CaptionHtml="Paragraf 4260"/>
+        <Field EditValue="{SumaParagraf4300}" CaptionHtml="Paragraf 4300"/>
+      </Row>
+      <Row>
+        <Field EditValue="{SumaParagraf4270}" CaptionHtml="Paragraf 4270"/>
+        <Field EditValue="{SumaParagraf4270FR}" CaptionHtml="Paragraf 4270 FR"/>
+      </Row>
+    </Group>
+  </Page>
+</DataForm>
+

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd">
+  <Flow Name="FilterPanel">
+      <Field CaptionHtml="Data" EditValue="{RozliczeniaPrzelewyViewInfo+WParams.Data}" />
+      <Field CaptionHtml="Zarządca" EditValue="{RozliczeniaPrzelewyViewInfo+WParams.Zarzadca}" />
+      <Field CaptionHtml="Adres" EditValue="{RozliczeniaPrzelewyViewInfo+WParams.Nieruchomosc}" />
+    </Flow>
+   <Grid Name="List" RemoveButton="Auto" EditButton="Auto" NewButton="Auto" IsToolbarVisible="true">
+    <Field CaptionHtml="Miesiac rok" Width="12" EditValue="{MiesiacRok}" Footer="None" />
+    <Field CaptionHtml="Nazwa zarzadcy" Width="18" EditValue="{Zarzadca.NazwaZarzadcy}" Footer="None" />
+    <Field CaptionHtml="Adres pelny nieruchomosci" Width="25" EditValue="{AdresPelnyNieruchomosci}" Footer="None" />
+    <Field CaptionHtml="Konto fundusz" Width="30" EditValue="{Nieruchomosc_wsk.KontoFundusz}" Footer="None" />
+    <Field CaptionHtml="Konto zaliczki" Width="30" EditValue="{Nieruchomosc_wsk.KontoZaliczki}" Footer="None" />
+    <Field CaptionHtml="Paragraf 4260" Width="14" EditValue="{SumaParagraf4260}" Footer="None" />
+    <Field CaptionHtml="Paragraf 4300" Width="14" EditValue="{SumaParagraf4300}" Footer="None" />
+    <Field CaptionHtml="Paragraf 4270" Width="14" EditValue="{SumaParagraf4270}" Footer="None" />
+    <Field CaptionHtml="Zaplata zaliczka" Width="14" EditValue="{ZaplataZaliczka}" Footer="Sum" />
+    <Field CaptionHtml="Fundusz Remontowy" Width="16" EditValue="{SumaParagraf4270FR}" Footer="None" />
+    <Field CaptionHtml="Zaplata fundusz" Width="14" EditValue="{ZaplataFundusz}" Footer="Sum" />
+   </Grid>
+</DataForm>

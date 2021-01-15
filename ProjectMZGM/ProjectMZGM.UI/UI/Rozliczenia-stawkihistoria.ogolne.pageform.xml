@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:RozliczeniaPage"
+          Priority="200"
+          DataType="ProjectMZGM.Rozliczenie,ProjectMZGM">
+
+  <Page Name="OgólnePage" CaptionHtml="Stawki - historia" DataContext="{DataSource}">
+    <Group CaptionHtml="Rozliczenia" LabelWidth="20" IsReadOnly="true">
+      <Row>
+        <Field EditValue="{AdresPelnyNieruchomosci}" CaptionHtml="Adres pełny nieruchomości" IsReadOnly="true" OuterWidth="70"/>
+        <Field EditValue="{Zarzadca}" CaptionHtml="Zarządca" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Data}" CaptionHtml="Data" IsReadOnly="true" />
+      </Row>
+      <Row>
+        <Field EditValue="{SumaStawek}" CaptionHtml="Suma Stawek" />
+      </Row>
+      <Row>
+        <Field EditValue="{FunduszRemontowy}" CaptionHtml="Fundusz Remontowy" />
+      </Row>
+      <Row>
+        <Field EditValue="{WodaStawka}" CaptionHtml="Woda Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{SciekiStawka}" CaptionHtml="Scieki Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{CoStawka}" CaptionHtml="CO Stawka"/>
+      </Row>
+     <Row>
+      <Field EditValue="{KEksplStawka}" CaptionHtml="Koszty elsploatacyjne Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{WynZarzStawka}" CaptionHtml="Wynagrodzenie zarządu Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{DomofonStawka}" CaptionHtml="Domofon Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{EnergiaStawka}" CaptionHtml="Energia Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{WindaStawka}" CaptionHtml="Winda Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{AntenaStawka}" CaptionHtml="Antena Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{CWUStawka}" CaptionHtml="CWU Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciStawka}" CaptionHtml="Smieci Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciSelStawka}" CaptionHtml="Smieci selekcjonowane Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{SmieciNselStawka}" CaptionHtml="Smieci nie selekcjonowane Stawka" />
+      </Row>
+      <Row>
+        <Field EditValue="{FunduszRemontowyStawka}" CaptionHtml="Fundusz remontowy Stawka"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Paragraf4260}" CaptionHtml="Paragraf 4260" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{Paragraf4300}" CaptionHtml="Paragraf 4300" IsReadOnly="true"/>
+      </Row> 
+      <Row>
+        <Field EditValue="{Paragraf4270}" CaptionHtml="Paragraf 4270" IsReadOnly="true"/>
+      </Row>
+      <Row>
+        <Field EditValue="{FunduszRemontowyParagraf4270}" CaptionHtml="Paragraf 4270 FR" IsReadOnly="true"/>
+        <Field EditValue="{SumaStawek}" CaptionHtml="Suma korekt" IsReadOnly="true"/>
+      </Row>
+      </Group>
+  </Page>
+</DataForm>
+

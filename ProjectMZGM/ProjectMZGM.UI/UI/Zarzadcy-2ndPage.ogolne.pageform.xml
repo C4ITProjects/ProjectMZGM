@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:ZarzadcyPage"
+          Priority="120"
+          DataType="ProjectMZGM.Zarzadca,ProjectMZGM">
+
+  <Page Name="OgólnePage" CaptionHtml="Konta" DataContext="{DataSource}">
+    <Group CaptionHtml="Konta" LabelWidth="20">
+      <Row>
+        <Field EditValue="{KontoZarzadca3}" CaptionHtml="Zarządca 3" Width="25"/>
+        <Field EditValue="{KontoZarzadca4}" CaptionHtml="Zarządca 4" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoWoda4}" CaptionHtml="Woda 4" Width="25"/>
+        <Field EditValue="{KontoWoda5}" CaptionHtml="Woda 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoScieki4}" CaptionHtml="Ścieki 4" Width="25"/>
+        <Field EditValue="{KontoScieki5}" CaptionHtml="Ścieki 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoSmieci4}" CaptionHtml="Śmieci 4" Width="25"/>
+        <Field EditValue="{KontoSmieci5}" CaptionHtml="Śmieci 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoKekspl4}" CaptionHtml="Koszty eksploatacji 4" Width="25"/>
+        <Field EditValue="{KontoKekspl5}" CaptionHtml="Koszty eksploatacji 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoKosztyZarz4}" CaptionHtml="Koszty zarządu 4" Width="25"/>
+        <Field EditValue="{KontoKosztyZarz5}" CaptionHtml="Koszty zarządu 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoDomofon4}" CaptionHtml="Domofon 4" Width="25"/>
+        <Field EditValue="{KontoDomofon5}" CaptionHtml="Domofon 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoFunduszRem4}" CaptionHtml="Fundusz remontowy 4" Width="25"/>
+        <Field EditValue="{KontoFunduszRem5}" CaptionHtml="Fundusz remontowy 5" Width="25"/>
+      </Row>
+
+      <Row>
+        <Field EditValue="{KontoCWU4}" CaptionHtml="CWU 4" Width="25"/>
+        <Field EditValue="{KontoCWU5}" CaptionHtml="CWU 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoCO4}" CaptionHtml="CO 4" Width="25"/>
+        <Field EditValue="{KontoCO5}" CaptionHtml="CO 5" Width="25"/>
+      </Row>
+      <Row>
+        <Field EditValue="{KontoAntena4}" CaptionHtml="Antena 4" Width="25"/>
+        <Field EditValue="{KontoAntena5}" CaptionHtml="Antena 5" Width="25"/>
+      </Row>
+
+      <Row>
+        <Field EditValue="{KontoWinda4}" CaptionHtml="Winda 4" Width="25"/>
+        <Field EditValue="{KontoWinda5}" CaptionHtml="Winda 5" Width="25"/>
+      </Row>
+
+      <Row>
+        <Field EditValue="{KontoParagraf4260}" CaptionHtml="Paragraf 4260" Width="25"/>
+        <Field EditValue="{KontoParagraf4300}" CaptionHtml="Paragraf 4300" Width="25"/>
+
+      </Row>
+      <Row>
+        <Field EditValue="{KontoParagraf4270}" CaptionHtml="Paragraf 4270" Width="25"/>
+        <Field EditValue="{KontoParagraf4270FR}" CaptionHtml="Paragraf 4270 FR" Width="25"/>
+      </Row>
+    </Group>
+
+
+  </Page>
+</DataForm>
+

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:NieruchomoscPage"
+          Priority="11"
+          DataType="ProjectMZGM.Nieruchomosc,ProjectMZGM">
+  <Page Name="NieruchomoscPage" CaptionHtml="Dodatkowe dane " DataContext="{DataSource}">
+
+
+    <Group CaptionHtml="Nieruchomości">
+      <Row>
+        <Stack>
+        <Field EditValue="{AdresPelnyNieruchomosci}" CaptionHtml="Pełen Adres" OuterWidth="30"/>
+        <Field EditValue="{KodPocztowy}" CaptionHtml="Kod pocztowy" OuterWidth="30"/>
+        <Field EditValue="{Miasto}" CaptionHtml="Miasto" OuterWidth="40"/>
+        <Field EditValue="{KontoFundusz}" CaptionHtml="Konto-fundusz" OuterWidth="50" LabelWidth="12"/>
+        <Field EditValue="{KontoZaliczki}" CaptionHtml="Konto-zaliczki" OuterWidth="50" LabelWidth="12"/> 
+        </Stack>
+      </Row>
+    </Group>
+  </Page>
+</DataForm>
+

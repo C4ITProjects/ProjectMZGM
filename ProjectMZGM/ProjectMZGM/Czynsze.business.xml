@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Zawiera informację nagłówkową pliku XML oraz informację o użytym kodowaniu znaków. -->
+<module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.enova.pl/schema/business_struct.xsd" xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/business_struct.xsd"
+ name="Czynsze" namespace="ProjectMZGM.Czynsze" versionName="Czynsze" versionNumber="201">
+  <import>Generator</import>
+  <using>Soneta.CRM</using>
+
+  <table name ="Zarzadca" tablename="Zarzadcy" tablecaption="Tabela zarzadcow" guided ="Root">
+    <key name="WgKod" keyprimary="true" keyunique="true">
+      <keycol name="KodZarzadcy"/>
+    </key>
+    <col name="KodZarzadcy" required="true" type="string" length ="6"/>
+    <col name="Nieaktywny" required="false" type="boolean"/>
+    <col name="NazwaZarzadcy" required ="true" type ="string" length="80"/>
+    <col name="NumerTelefonu" required ="false" type ="string" length="15"/>
+    <col name="Ulica" required="false" type="string" length="80" />
+    <col name="NumerDomu" required="false" type="string" length="80" />
+    <col name="NumerLokalu" required="false" type="string" length="80" />
+    <col name="KodPocztowyZarz" required="false" type="string" length="6" />
+    <col name="MiastoZarz" required="false" type="string" length="50" />
+    <col name="KontoKsiegowe" required="false" type="string" length="50" />
+    <col name="KontoWoda4" required="false" type="string" length="50" />
+    <col name="KontoWoda5" required="false" type="string" length="50" />
+    <col name="KontoScieki4" required="false" type="string" length="50" />
+    <col name="KontoScieki5" required="false" type="string" length="50" />
+    <col name="KontoCO4" required="false" type="string" length="50" />
+    <col name="KontoCO5" required="false" type="string" length="50" />
+    <col name="KontoSmieci4" required="false" type="string" length="50" />
+    <col name="KontoSmieci5" required="false" type="string" length="50" />
+    <col name="KontoAntena4" required="false" type="string" length="50" />
+    <col name="KontoAntena5" required="false" type="string" length="50" />
+    <col name="KontoKekspl4" required="false" type="string" length="50" />
+    <col name="KontoKekspl5" required="false" type="string" length="50" />
+    <col name="KontoKosztyZarz4" required="false" type="string" length="50" />
+    <col name="KontoKosztyZarz5" required="false" type="string" length="50" />
+    <col name="KontoDomofon4" required="false" type="string" length="50" />
+    <col name="KontoDomofon5" required="false" type="string" length="50" />
+    <col name="KontoFunduszRem4" required="false" type="string" length="50" />
+    <col name="KontoFunduszRem5" required="false" type="string" length="50" />
+    <col name="KontoCWU4" required="false" type="string" length="50" />
+    <col name="KontoCWU5" required="false" type="string" length="50" />
+    <col name="KontoWinda4" required="false" type="string" length="50" />
+    <col name="KontoWinda5" required="false" type="string" length="50" />
+    <col name="KontoParagraf4260" required="false" type="string" length="50" />
+    <col name="KontoParagraf4300" required="false" type="string" length="50" />
+    <col name="KontoParagraf4270" required="false" type="string" length="50" />
+    <col name="KontoParagraf4270FR" required="false" type="string" length="50" />
+    <col name="KontoZarzadca3" required="false" type="string" length="50" />
+    <col name="KontoZarzadca4" required="false" type="string" length="50" />
+  </table>
+  
+  <table name ="Rozliczenie" tablename="Rozliczenia" tablecaption="Tabela rozliczen" guided ="Root">
+    <key name="WgAdresuNieruchomosci" keyprimary="true" keyunique="false">
+      <keycol name="AdresPelnyNieruchomosci"/>
+    </key>
+    <col name="AdresPelnyNieruchomosci" required="false" type="string" length="150"/>
+    <col name="Data" required ="true" type ="date"/>
+    <col name="MiesiacRok" required ="false" type ="string" length="40"/>
+    <col name="DataKorekta" required ="false" type ="date"/>
+    <col name="WodaStawka" required ="false" type ="currency"/>
+    <col name="WodaKorekta" required ="false" type ="currency"/>
+    <col name="SciekiStawka" required ="false" type ="currency"/>
+    <col name="SciekiKorekta" required ="false" type ="currency"/>
+    <col name="CoStawka" required ="false" type ="currency"/>
+    <col name="CoKorekta" required ="false" type ="currency"/>
+    <col name="KEksplStawka" required ="false" type ="currency"/>
+    <col name="KEksplKorekta" required ="false" type ="currency"/>
+    <col name="WynZarzStawka" required ="false" type ="currency"/>
+    <col name="WynZarzKorekta" required ="false" type ="currency"/>
+    <col name="DomofonStawka" required ="false" type ="currency"/>
+    <col name="DomofonKorekta" required ="false" type ="currency"/>
+    <col name="EnergiaStawka" required ="false" type ="currency"/>
+    <col name="EnergiaKorekta" required ="false" type ="currency"/>
+    <col name="WindaStawka" required ="false" type ="currency"/>
+    <col name="WindaKorekta" required ="false" type ="currency"/>
+    <col name="AntenaStawka" required ="false" type ="currency"/>
+    <col name="AntenaKorekta" required ="false" type ="currency"/>
+    <col name="CWUStawka" required ="false" type ="currency"/>
+    <col name="CWUKorekta" required ="false" type ="currency"/>
+    <col name="SmieciStawka" required ="false" type ="currency"/>
+    <col name="SmieciKorekta" required ="false" type ="currency"/>
+    <col name="SmieciSelStawka" required ="false" type ="currency"/>
+    <col name="SmieciSelKorekta" required ="false" type ="currency"/>
+    <col name="SmieciNselStawka" required ="false" type ="currency"/>
+    <col name="SmieciNselKorekta" required ="false" type ="currency"/>
+    <col name="FunduszRemontowyStawka" required ="false" type ="currency"/>
+    <col name="FunduszRemontowyKorekta" required ="false" type ="currency"/>
+    <col name="Paragraf4260" required ="false" type ="currency"/>
+    <col name="Paragraf4260Korekta" required ="false" type ="currency"/>
+    <col name="Paragraf4300" required ="false" type ="currency"/>
+    <col name="Paragraf4300Korekta" required ="false" type ="currency"/>
+    <col name="Paragraf4270" required ="false" type ="currency"/>
+    <col name="Paragraf4270Korekta" required ="false" type ="currency"/>
+    <col name="FunduszRemontowyParagraf4270" required ="false" type ="currency"/>
+    <col name="FunduszRemontowyParagraf4270Korekta" required ="false" type ="currency"/>
+    <col name="SumaKorekt" required ="false" type ="currency"/>
+    <col name="SumaRozliczen" required ="false" type ="currency"/>
+    <col name="SumaStawek" required ="false" type ="currency"/>
+    <col name="SumaStawekBezFR" required ="false" type ="currency"/>
+    <col name="FunduszRemontowy" required ="false" type ="currency"/>
+    <col name="ZaplataZaliczka1" required ="false" type ="currency"/>
+    <col name="ZaplataZaliczka2" required ="false" type ="currency"/>
+    <col name="ZaplataZaliczka3" required ="false" type ="currency"/>
+    <col name="ZaplataFundusz1" required ="false" type ="currency"/>
+    <col name="ZaplataFundusz2" required ="false" type ="currency"/>
+    <col name="ZaplataFundusz3" required ="false" type ="currency"/>
+    <col name="ZaplataFundusz" required ="false" type ="currency"/>
+    <col name="ZaplataZaliczka" required ="false" type ="currency"/>
+
+    <col name="SumaParagraf4260" required ="false" type ="currency"/>
+    <col name="SumaParagraf4300" required ="false" type ="currency"/>
+    <col name="SumaParagraf4270" required ="false" type ="currency"/>
+    <col name="SumaParagraf4270FR" required ="false" type ="currency"/>
+
+    <col name="Nieruchomosc_wsk" type="Nieruchomosc" required="false" relname="Rozliczenie_Nieruchomosc"/>
+    <col name="Zarzadca" type="Zarzadca" required="true" relname="Rozliczenie_Zarzadca"/>
+  </table>
+
+  <table name ="Nieruchomosc" tablename="Nieruchomosci" tablecaption="Tabela lokali" guided ="Root">
+    <key name="WgAdresuNieruchomosci" keyprimary="true" keyunique="false">
+      <keycol name="AdresPelnyNieruchomosci"/>
+    </key>
+    <key name="WgKoduLokalu" keyprimary="false" keyunique="false">
+      <keycol name="KodLokalu"/>
+    </key>
+    <col name="AdresPelnyNieruchomosci" required="false" type="string" length="150"/>
+    <col name="Nieaktywny" required="false" type="boolean"/>
+    <col name="KodLokalu" required="false" type="string" length="150"/>
+    <col name="KodPocztowy" required="false" type="string" length="150"/>
+    <col name="ImieNajemcy" required="false" type="string" length="80" />
+    <col name="NazwiskoNajemcy" required="false" type="string" length="80" />
+    <col name="OpisDodatkowy" required="false" type="string" length="200" />
+    <col name="UlicaNajemcy" required="false" type="string" length="80" />
+    <col name="NumerBramyNajemcy" required="false" type="string" length="5"/>
+    <col name="NumerMieszkaniaNajemcy" required="false" type="string" length="5"/>
+    <col name="KodPocztowyNajemcy" required="false" type="string" length="6" />
+    <col name="Miasto" required="false" type="string" length="50" />
+    <col name="MiastoNajemcy" required="false" type="string" length="50" />
+    <col name="StawkaWoda" required ="false" type ="currency"/>
+    <col name="StawkaScieki" required ="false" type ="currency"/>
+    <col name="StawkaCo" required ="false" type ="currency"/>
+    <col name="StawkaSmieci" required ="false" type ="currency"/>
+    <col name="StawkaKEkspl" required ="false" type ="currency"/>
+    <col name="StawkaWynZarz" required ="false" type ="currency"/>
+    <col name="StawkaDomofon" required ="false" type ="currency"/>
+    <col name="StawkaEnergia" required ="false" type ="currency"/>
+    <col name="StawkaWinda" required ="false" type ="currency"/>
+    <col name="StawkaAntena" required ="false" type ="currency"/>
+    <col name="StawkaCWU" required ="false" type ="currency"/>
+    <col name="StawkaSmieciSel" required ="false" type ="currency"/>
+    <col name="StawkaSmieciNsel" required ="false" type ="currency"/>
+    <col name="StawkaCalosc" required ="false" type ="currency"/>
+    <col name="StawkaFunduszRemontowy" required ="false" type ="currency"/>
+    <col name="SumaStawekBezFR" required ="false" type ="currency"/>
+    <col name="KontoFundusz" required="false" type="string" length="50" />
+    <col name="KontoZaliczki" required="false" type="string" length="50" />
+    <col name="Rozliczenie" type="Rozliczenie" required="false" relname="Nieruchomosc_Rozliczenie" delete="cascade"/>
+    <col name="Zarzadca" type="Zarzadca" required="true" relname="Nieruchomosc_Zarzadca" delete="cascade"/>
+  </table>
+</module>

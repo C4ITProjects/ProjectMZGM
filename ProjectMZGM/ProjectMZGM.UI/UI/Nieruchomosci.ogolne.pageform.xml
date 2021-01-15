@@ -1,0 +1,90 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:NieruchomosciPage"
+          Priority="10"
+          DataType="ProjectMZGM.Nieruchomosc,ProjectMZGM">
+
+  <Page Name="NieruchomosciPage" CaptionHtml="Nieruchomości" DataContext="{DataSource}">
+    <Group CaptionHtml="Adres">
+      <Row>
+        <Field EditValue="{AdresPelnyNieruchomosci}" CaptionHtml="Adres nieruchomości" OuterWidth="86" LabelWidth="20"/>
+        <Field EditValue="{Nieaktywny}" CaptionHtml="Zablokowany"/>
+      </Row>
+    </Group>
+    
+    <Group CaptionHtml="Zarządca">
+      <Row>
+        <Field EditValue="{Zarzadca}" CaptionHtml="Zarządca" LabelWidth="20" OuterWidth="86"/>
+      </Row>
+    </Group>
+  <Group CaptionHtml="Stawki" LabelWidth="20">
+        <Row>
+          <Field EditValue="{StawkaWoda}" CaptionHtml="Woda" />
+          <Field EditValue="{StawkaScieki}" CaptionHtml="Ścieki"/>
+          <Field EditValue="{StawkaCo}" CaptionHtml="CO" />
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaEnergia}" CaptionHtml="Energia" IsReadOnly="true"/>
+          <Field EditValue="{StawkaKEkspl}" CaptionHtml="Koszty ekspl." />
+          <Field EditValue="{StawkaCWU}" CaptionHtml="CWU"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaWinda}" CaptionHtml="Winda" />
+          <Field EditValue="{StawkaDomofon}" CaptionHtml="Domofon"/>
+          <Field EditValue="{StawkaAntena}" CaptionHtml="Antena" />
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaSmieci}" CaptionHtml="Śmieci" IsReadOnly="true"/>
+          <Field EditValue="{StawkaSmieciNsel}" CaptionHtml="Nieczystości nieselekcjonowane"/>
+          <Field EditValue="{StawkaSmieciSel}" CaptionHtml="Nieczystości selekcjonowane"/>
+        </Row>
+        <Row>
+          <Field EditValue="{StawkaFunduszRemontowy}" CaptionHtml="Fundusz remontowy"/>
+          <Field EditValue="{StawkaWynZarz}" CaptionHtml="Wynagrodzenie zarządcy" />
+          <Field EditValue="{Workers.ExNieruchomosci.SumaStawek}" CaptionHtml="Suma stawek" />
+        </Row>
+  </Group>
+    <Group CaptionHtml="Podsumowanie">
+      <Row>
+        <Field CaptionHtml="Stawka całość" IsReadOnly="true" EditValue="{StawkaCalosc}"/>
+        <Field CaptionHtml="Stawka bez FR" IsReadOnly="true" EditValue="{SumaStawekBezFR}"/>
+        <Field CaptionHtml="Stawka FR" IsReadOnly="true" EditValue="{StawkaFunduszRemontowy}"/>
+      </Row>
+    </Group>
+
+    <Group CaptionHtml="Rozliczenia">
+      <Row>
+        <Stack>
+          <Grid EditValue="{new RozliczeniaViewInfo.GetList}" Width="*" Height="*" SumType="All" OrderBy="ID" IsToolbarVisible="true" NewButton="None" EditButton="Auto" EditInPlace="false" RemoveButton="None">
+            <Field Footer="None" EditValue="{AdresPelnyNieruchomosci}" Width="11" Class="PreventOrderBy" CaptionHtml="Adres nieruchomości"/>
+            <Field Footer="None" EditValue="{MiesiacRok}"  Width="12" Class="PreventOrderBy"  CaptionHtml="Miesiac rok"/>
+            <Field Footer="Sum" EditValue="{WodaKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Woda korekta"/>
+            <Field Footer="Sum" EditValue="{SciekiKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Ścieki korekta"/>
+            <Field Footer="Sum" EditValue="{CoKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="CO korekta"/>
+            <Field Footer="Sum" EditValue="{SmieciKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Śmieci korekta"/>
+            <Field Footer="Sum" EditValue="{KEksplKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="K.ekspl korekta"/>
+            <Field Footer="Sum" EditValue="{WynZarzKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="WynZarz korekta"/>
+            <Field Footer="Sum" EditValue="{DomofonKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Domofon korekta"/>
+            <Field Footer="Sum" EditValue="{EnergiaKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Energia korekta"/>
+            <Field Footer="Sum" EditValue="{WindaKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Winda korekta"/>
+            <Field Footer="Sum" EditValue="{AntenaKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Antena korekta"/>
+            <Field Footer="Sum" EditValue="{CWUKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="CWU korekta"/>
+            <Field Footer="Sum" EditValue="{SmieciSelKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Smieci selekcjonowane korekta"/>
+            <Field Footer="Sum" EditValue="{SmieciNselKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Smieci nieselekcjonowane korekta"/>
+            <Field Footer="Sum" EditValue="{FunduszRemontowyKorekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Fundusz Remontowy korekta"/>
+            <Field Footer="Sum" EditValue="{Paragraf4260Korekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Paragraf 4260" IsReadOnly="1"/>
+            <Field Footer="Sum" EditValue="{Paragraf4300Korekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Paragraf 4300" IsReadOnly="1"/>
+            <Field Footer="Sum" EditValue="{Paragraf4270Korekta}" Width="11" Class="PreventOrderBy"  CaptionHtml="Paragraf 4270" IsReadOnly="1"/>
+            <Field Footer="Sum" EditValue="{FunduszRemontowyParagraf4270Korekta}" Width="23" Class="PreventOrderBy"  CaptionHtml="Fundusz Remontowy Paragraf4270" IsReadOnly="1"/>
+            <Field Footer="Sum" EditValue="{Workers.SumaRozliczen.SumaKorekt}" Width="14" Class="PreventOrderBy" CaptionHtml="Suma korekt"/>
+          </Grid>
+        </Stack>
+      </Row>
+    </Group>
+  </Page>
+</DataForm>
+

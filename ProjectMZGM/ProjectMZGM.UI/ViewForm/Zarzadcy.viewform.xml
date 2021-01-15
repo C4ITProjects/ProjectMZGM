@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd">
+  <Flow Name="FilterPanel">
+
+  </Flow>
+  <Grid Name="List" RemoveButton="Auto" EditButton="Auto" NewButton="Auto" IsToolbarVisible="true">
+    <Field CaptionHtml="Nazwa Zarzadcy" Width="15" EditValue="{NazwaZarzadcy}" />
+    <Field CaptionHtml="Ulica" Width="7" EditValue="{Ulica}" />
+    <Field CaptionHtml="Numer" Width="7" EditValue="{Numer}" />
+    <Field CaptionHtml="Kod pocztowy" Width="8" EditValue="{KodPocztowy}" />
+    <Field CaptionHtml="Miasto" Width="10" EditValue="{Miasto}" />
+    <Field CaptionHtml="Paragraf 4260 - konto" Width="25" EditValue="{KontoParagraf4260}" />
+    <Field CaptionHtml="Paragraf 4300 - konto" Width="25" EditValue="{KontoParagraf4300}" />
+    <Field CaptionHtml="Paragraf 4270 - konto" Width="25" EditValue="{KontoParagraf4270}" />
+    <Field CaptionHtml="Paragraf 4270FR - konto" Width="25" EditValue="{KontoParagraf4270FR}" />
+  </Grid> 
+  
+</DataForm>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+
+<DataForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns="http://www.enova.pl/schema/form.xsd"
+          xsi:schemaLocation="http://www.enova.pl/schema/ http://www.enova.pl/schema/form.xsd"
+          RightName="Page:ZarzadcyPage"
+          Priority="100"
+          DataType="ProjectMZGM.Zarzadca,ProjectMZGM">
+
+  <Page Name="OgólnePage" CaptionHtml="Zarządcy" DataContext="{DataSource}">
+    <Group CaptionHtml="Zarządca">
+      <Stack>
+        <Row>
+          <Field EditValue="{KodZarzadcy}" CaptionHtml="Kod"  OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{NazwaZarzadcy}" CaptionHtml="Nazwa zarządcy"  OuterWidth="40" LabelWidth="12"/>
+          <Field EditValue="{Nieaktywny}" CaptionHtml="Zablokowany" LabelWidth="12"/>
+        </Row>
+      </Stack>
+    </Group>
+    <Group CaptionHtml="Dodatkowe dane">
+      <Stack>
+        <Row>
+          <Field EditValue="{Ulica}" CaptionHtml="Ulica" OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{NumerDomu}" CaptionHtml="Numer domu" OuterWidth="40" LabelWidth="12"/>
+          <Field EditValue="{NumerLokalu}" CaptionHtml="Numer lokalu" OuterWidth="40" LabelWidth="12"/>
+        </Row>
+          <Row>
+          <Field EditValue="{KodPocztowyZarz}" CaptionHtml="Kod pocztowy" Class="LeftAlign" OuterWidth="40" LabelWidth="11"/>
+          <Field EditValue="{MiastoZarz}" CaptionHtml="Miasto" OuterWidth="40" LabelWidth="12"/>
+          <Field EditValue="{NumerTelefonu}" CaptionHtml="Numer telefonu" OuterWidth="40" LabelWidth="12"/>
+        </Row>
+        </Stack>
+    </Group>
+  </Page>
+</DataForm>
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DataForm Contexts="License.All" xmlns="http://www.enova.pl/schema/form.xsd">
+  <Grid Name="List" IsToolbarVisible="true" NewButton="Auto">
+    <Field Footer="None" EditValue="{NazwaZarzadcy}" Width="17" CaptionHtml="Nazwa zarządcy"/>
+
+    <Field Footer="None" EditValue="{Ulica}" Width="12" CaptionHtml="Ulica"/>
+
+    <Field Footer="None" EditValue="{Numer}" Width="8" CaptionHtml="Numer"/>
+
+    <Field Footer="None" EditValue="{KodPocztowyZarz}" Width="11" CaptionHtml="Kod pocztowy"/>
+
+    <Field Footer="None" EditValue="{MiastoZarz}" Width="15" CaptionHtml="Miasto"/>
+    
+    <Field Footer="None" EditValue="{KontoKsiegowe}" Width="15" CaptionHtml="Konto księgowe"/>
+  </Grid>
+</DataForm>
